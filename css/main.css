@@ -345,7 +345,6 @@ textarea {
 	 /* ==========================================================================
 	    About Page
 	    ========================================================================== */
-
 	 .mission {
 		 background-color: #527158;
 	   display: flex;
@@ -355,20 +354,21 @@ textarea {
 	 }
 
 	.map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 125%;
-    overflow: hidden;
     position: relative;
+		padding-bottom: 125%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
 	}
 
 	.map iframe {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
+
 	 .contact-section {
 		 background-color: #2a423a;
 	   display: flex;
@@ -657,6 +657,10 @@ textarea {
       width: 45%;
     }
 
+		.map figure {
+    padding-bottom: 45.5%;
+  	}
+
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -765,6 +769,9 @@ textarea {
 	/* ==========================================================================
   About Page
   ========================================================================== */
+	.map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
